@@ -41,6 +41,6 @@ func main() {
 	// Reusable exported code
 	fmt.Println("⏱️ Creating pkg folders...")
 	os.MkdirAll("./pkg/example_package/", os.ModePerm)
-	os.OpenFile("./internal/example_package/example_package_file.go", os.O_RDONLY|os.O_CREATE, 0666)
+	os.OpenFile("./pkg/example_package/example_package_file.go", os.O_RDONLY|os.O_CREATE, 0666)
 	fmt.Println("✔️ Pkg folders created successfully!")
 }
